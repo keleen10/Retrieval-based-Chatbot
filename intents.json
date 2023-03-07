@@ -1,0 +1,272 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+         "context": [""]
+        },
+        {"tag": "adverse_drug",
+         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+         "responses": ["Navigating to Adverse drug reaction module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure",
+         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+         "responses": ["Navigating to Blood Pressure module"],
+         "context": [""]
+        },
+        {"tag": "blood_pressure_search",
+         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+         "responses": ["Please provide Patient ID", "Patient ID?"],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+        {"tag": "search_blood_pressure_by_patient_id",
+         "patterns": [],
+         "responses": ["Loading Blood pressure result for Patient"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        },
+        {"tag": "greeting",
+                "patterns": [
+                    "Hi there",
+                    "How are you",
+                    "Is anyone there?",
+                    "Hey",
+                    "Hola",
+                    "Hello",
+                    "Good day"
+                ],
+                "responses": [
+                    "Hello, thanks for asking",
+                    "Good to see you again",
+                    "Hi there, how can I help?"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "goodbye",
+                "patterns": [
+                    "Bye",
+                    "See you later",
+                    "Goodbye"
+                ],
+                "responses": [
+                    "See you later, thanks for visiting",
+                    "Goodbye, have a nice day"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "thanks",
+                "patterns": [
+                    "Thanks",
+                    "Thank you",
+                    "That's helpful"
+                ],
+                "responses": [
+                    "You're welcome",
+                    "Anytime",
+                    "Glad I could help"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "options",
+                "patterns": [
+                    "What can you do?",
+                    "What are your features?",
+                    "Can you help me?"
+                ],
+                "responses": [
+                    "I can answer questions, give recommendations, and help you find what you're looking for",
+                    "I'm here to help with whatever you need",
+                    "Just let me know what you're looking for and I'll do my best to assist you"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "name",
+                "patterns": [
+                    "What's your name?",
+                    "Who are you?",
+                    "What do you go by?"
+                ],
+                "responses": [
+                    "My name is Chatbot",
+                    "I'm Chatbot, nice to meet you",
+                    "You can call me Chatbot"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "help",
+                "patterns": [
+                    "I need help",
+                    "Can you help me?",
+                    "What should I do?"
+                ],
+                "responses": [
+                    "Of course, what do you need help with?",
+                    "Sure, what seems to be the problem?",
+                    "I'd be happy to help. What do you need assistance with?"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "thankful",
+                "patterns": [
+                    "You're the best",
+                    "You saved my day",
+                    "I'm grateful",
+                    "Thanks for everything",
+                    "Thanks a lot",
+                    "You're amazing",
+                    "You're a lifesaver"
+                ],
+                "responses": [
+                    "It's my pleasure to assist you",
+                    "I'm glad I could be of help",
+                    "No problem, happy to assist you",
+                    "You're welcome, glad to be of service"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "sorry",
+                "patterns": [
+                    "I'm sorry",
+                    "I apologize",
+                    "My apologies",
+                    "Sorry about that"
+                ],
+                "responses": [
+                    "No worries, it's all good",
+                    "No problem, everyone makes mistakes",
+                    "It's okay, mistakes happen"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "location",
+                "patterns": [
+                "Where are you located?",
+                "Where do you operate from?",
+                "What's your address?"
+                ],
+                "responses": [
+                "I'm an online chatbot, so I don't have a physical location",
+                "I operate from a server in the cloud, so I can be accessed from anywhere",
+                "I don't have a physical address, but you can find me online"
+                ],
+                "context": [""]
+                },
+                {
+                "tag": "weather",
+                "patterns": [
+                "What's the weather like today?",
+                "Will it rain today?",
+                "How hot is it outside?"
+                ],
+                "responses": [
+                "I'm sorry, I don't have access to real-time weather information",
+                "I'm not sure, you can check a weather website or app for the latest forecast",
+                "I'm afraid I can't answer that question, but you can try checking a weather service online"
+                ],
+                "context": [""]
+                },
+                {
+                "tag": "joke",
+                "patterns": [
+                "Tell me a joke",
+                "Do you know any jokes?",
+                "Make me laugh"
+                ],
+                "responses": [
+                "Why don't scientists trust atoms? Because they make up everything.",
+                "Why did the tomato turn red? Because it saw the salad dressing.",
+                "What did one hat say to the other? You stay here, I'll go on ahead.",
+                "Why did the chicken cross the playground? To get to the other slide.",
+                "Why did the coffee file a police report? Because it got mugged.",
+                "Why did the banana go to the doctor? Because it wasn't peeling well."
+                ],
+                "context": [""]
+                },
+                {
+                "tag": "compliment",
+                "patterns": [
+                "You're smart",
+                "You're intelligent",
+                "You're helpful",
+                "You're amazing",
+                "You're the best",
+                "You're awesome",
+                "You're fantastic",
+                "You're incredible"
+                ],
+                "responses": [
+                "Thank you, that means a lot to me",
+                "I appreciate the compliment",
+                "Thanks, I'm just doing my job",
+                "You're too kind, thanks for the positive feedback"
+                ],
+                "context": [""]
+                },
+                {
+                "tag": "thanks_agent",
+                "patterns": [
+                "Can I speak to a human?",
+                "I want to talk to a real person",
+                "Can you transfer me to a human?"
+                ],
+                "responses": [
+                "Sure, please hold while I connect you with a customer service representative",
+                "I'm sorry, I'm not able to transfer you to a human, but I'll do my best to assist you",
+                "I'm here to help. What do you need assistance with?"
+                ],
+                "context": [""]
+                }
+   ]
+}
